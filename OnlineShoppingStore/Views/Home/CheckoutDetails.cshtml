@@ -42,14 +42,14 @@ else
                     <td>@lineTotal</td>
                 </tr>
             }
-
             <tr>
-                <td colspan="4" class="text-right"><b>Total: @Total</b></td>
+                <td colspan="4" id="takeamount" class="text-right"><b>Total: @Total</b></td>
 
             </tr>
         </tbody>
     </table>
-    <input type="button" value="Process order" onclick="window.location = '@Url.Action("PaymentWithPapal2","Payment")'"/>
+
+    Html.RenderAction("PaymentWithPapal2", "Payment");
 
 }
-
+<script></script>
