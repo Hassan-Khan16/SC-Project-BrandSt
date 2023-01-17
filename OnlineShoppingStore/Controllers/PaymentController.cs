@@ -38,6 +38,7 @@ namespace OnlineShoppingStore.Controllers
             tbl.State = shippingdetail.State;
             tbl.Country = shippingdetail.Country;
             tbl.ZipCode = shippingdetail.ZipCode;
+         
             tbl.AmountPaid = shippingdetail.AmountPaid;
             tbl.PaymentType = "Cash";
 
