@@ -5,9 +5,9 @@ using System.Web;
 
 namespace OnlineShoppingStore.Models
 {
-    public class EmployeeViewModel
+    public class RoleViewModel
     {
-        public int CategoryId { get; set; }
-          public string CategoryName { get; set; }
+        public int RoleId { get; set; }
+          public string RoleName { get; set; }
     }
 }

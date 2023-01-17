@@ -33,13 +33,13 @@ namespace OnlineShoppingStore.Controllers
             Tbl_ShippingDetails tbl = new Tbl_ShippingDetails();
 
             tbl.Adress = shippingdetail.Adress;
-            tbl.MemberId = shippingdetail.MemberId;
+            tbl.MemberId = 1;
             tbl.City = shippingdetail.City;
             tbl.State = shippingdetail.State;
             tbl.Country = shippingdetail.Country;
             tbl.ZipCode = shippingdetail.ZipCode;
             tbl.AmountPaid = shippingdetail.AmountPaid;
-            tbl.PaymentType = shippingdetail.PaymentType;
+            tbl.PaymentType = "Cash";
 
             db.Tbl_ShippingDetails.Add(tbl);
             db.SaveChanges();
